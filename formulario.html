@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Usuario</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS';
+            text-align: center;
+            margin: 20px;
+            background: linear-gradient(#F5F5DC, #dcdbcc);
+        }
+
+        
+        h1 {
+             background-color: #142b50;
+             color: white;
+            padding: 10px;
+            }
+
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        label {
+            text-align: center;
+            display: block;
+            margin: 10px 0;
+            color: #333;
+            border-radius: 25px;
+        }
+
+        input {
+            width: 500px;
+            padding: 8px;
+            margin: 5px 0 20px;
+            box-sizing: border-box;
+            border-radius: 25px;
+        }
+
+        input[type="submit"] {
+            background-color: #4d4038;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulario de Usuario</h1>
+
+    <form id="miFormulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required><br>
+
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" name="domicilio" required><br>
+
+        <label for="telefono">Número Telefónico:</label>
+        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}"><br>
+
+        <label for="cantidad">Cantidad Deseada:</label>
+        <input type="number" id="cantidad" name="cantidad" required><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        document.getElementById("miFormulario").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evitar que el formulario se envíe por defecto
+
+            // Acceder a los valores de los campos del formulario
+            var nombre = document.getElementById("nombre").value;
+            var apellidos = document.getElementById("apellidos").value;
+            var domicilio = document.getElementById("domicilio").value;
+            var telefono = document.getElementById("telefono").value;
+            var cantidad = document.getElementById("cantidad").value;
+
+            // Realizar acciones con los datos (puedes agregar lógica adicional aquí)
+
+            // Ejemplo de salida en consola
+            console.log("Nombre: " + nombre);
+            console.log("Apellidos: " + apellidos);
+            console.log("Domicilio: " + domicilio);
+            console.log("Número Telefónico: " + telefono);
+            console.log("Cantidad Deseada: " + cantidad);
+        });
+    </script>
+
+</body>
+</html>

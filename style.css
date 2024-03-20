@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(to bottom, #dd710d, #d7dba2); 
+    /* Fondo degradado de púrpura oscuro a púrpura más claro */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    border: 10px;
+    border-radius: 10px;
+    box-shadow: 0 80px 80px rgba(0, 0, 0, 0.1);
+    width: 700px; /* Ancho en píxeles */
+    max-width: 2000%; /* Máximo ancho del contenedor */
+    background-color: rgba(248, 236, 236, 0.308); /* Gris semitransparente */
+    margin: 100px auto; /* Centrar horizontalmente y añadir espacio superior */
+    padding: 0px;
+    opacity: 100%;
+}
+
+
+.card-body {
+    padding: 30px;
+}
+
+.form-control {
+    border: none;
+    border-radius: 8px;
+    background-color: #f1f3f6;
+    color: #495057;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #80bdff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+.Logo {
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto; /* Establece el margen izquierdo y derecho a 'auto' */
+    width: 500px;
+    height: auto; /* O ajusta la altura según sea necesario */
+    margin-bottom: 50px; /* Ajusta el margen inferior según sea necesario */
+}
+
+.container {
+    float: right;
+}
+
+.container {
+    width: 50%; /* O ajusta el ancho según sea necesario */
+    max-width: 860px; /* Establece un ancho máximo para el contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 10px; /* Opcional: añade relleno al contenedor */
+}
+

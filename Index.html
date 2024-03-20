@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasTLight</title>
+
+    <!-- BOOTSWATCH -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/yeti/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="BasTLight.png" type="image/png">
+    <img src="BasTLight.png" alt="BasTLight Icon" class="Logo">
+</head>
+
+<body class="bg-dark">
+    <!-- ADD TASK -->
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="h4"><center>Registro</center></h1>
+ 
+                        <form id="task-form">
+                            <label for="task-title">Usuario</label>
+                            <input
+                                type="text"
+                                id="task-title"
+                                class="form-control mb-3"
+                                placeholder="Ingrese su Correo"
+                                autofocus
+                            />
+                            <label for="task-description">Contraseña</label>
+                            <input
+                                id="task-description"
+                                type="password"
+                                class="form-control mb-3"
+                                placeholder="Ingrese su contraseña"
+                            />
+                            
+                            <center>  
+                                <!-- Utilizamos un botón de tipo submit para enviar el formulario -->
+                                <button type="submit" class="btn btn-primary" id="btn-task-form">Registrar</button>
+                            </center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUSTOM CODE -->
+    <script src="./index.js" type="module"></script> 
+    <script>
+        // Espera a que se cargue el documento
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtén el formulario
+            const form = document.getElementById('task-form');
+            
+            // Agrega un evento de envío al formulario
+            form.addEventListener('submit', function(event) {
+                // Evita el comportamiento predeterminado del formulario (no se enviará)
+                event.preventDefault();
+                
+                // Muestra una ventana de alerta
+                alert("Tu cuenta ha sido guardada exitosamente.");
+                
+                // Redirige a Undext.html después de 1.5 segundos
+                setTimeout(function() {
+                    window.location.href = "Undex.html";
+                }, 1000);
+            });
+        });
+    </script> 
+</body>
+</html>

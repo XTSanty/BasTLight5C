@@ -1,0 +1,55 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Fondo degradado */
+    color: #ffffff; /* Color del texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    margin-top: 50px;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo de las tarjetas */
+    color: #ffffff; /* Color del texto en las tarjetas */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los títulos */
+.h4 {
+    font-size: 24px;
+}
+
+/* Estilos para los inputs y select */
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+select {
+    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo de los inputs y select */
+    color: #ffffff; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para los botones */
+.btn-primary {
+    background-color: #ff6b6b; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ff7e7e; /* Color de fondo del botón al pasar el ratón */
+}
